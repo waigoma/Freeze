@@ -1,0 +1,9 @@
+name: Freeze
+version: ${project.version}
+main: waigoma.plugin.freeze.Main
+api-version: 1.13
+commands:
+  freeze:
+    description: /freeze
+    usage: /<command>
+    default: op
