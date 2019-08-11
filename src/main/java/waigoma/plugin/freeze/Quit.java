@@ -12,6 +12,5 @@ public class Quit implements Listener {
         Player p = event.getPlayer();
         String str = p.getName();
         Main.freeze.remove(str);
-        System.out.println("ばいばい");
     }
 }

@@ -12,7 +12,5 @@ public class Join implements Listener {
         Player p = event.getPlayer();
         String str = p.getName();
         Main.freeze.put(str,false);
-        p.sendMessage("いらっしゃい");
-
     }
 }

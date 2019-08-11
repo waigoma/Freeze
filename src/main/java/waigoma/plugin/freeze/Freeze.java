@@ -13,7 +13,6 @@ public class Freeze implements Listener {
         String str = p.getName();
         if (Main.freeze.get(str)){
             p.teleport(p);
-            System.out.println("呼ばれた");
         }
     }
 }
