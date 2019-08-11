@@ -1,5 +1,6 @@
 package waigoma.plugin.freeze;
 
+import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -17,6 +18,7 @@ public final class Main extends JavaPlugin {
 
     @Override
     public void onEnable() {
+        Bukkit.getServer().getLogger().info("[Freeze] Freeze Enabled");
         PluginManager pm = this.getServer().getPluginManager();
         pm.registerEvents(frz,this);
         pm.registerEvents(join,this);
