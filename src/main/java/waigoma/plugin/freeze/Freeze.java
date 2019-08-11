@@ -6,16 +6,14 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerMoveEvent;
 
 public class Freeze implements Listener {
-    private Main plugin;
-    public Freeze(Main pl){
-        plugin = pl;
-    }
 
     @EventHandler
     public void onPlayerMove(PlayerMoveEvent event){
-        if (Main.freeze){
-            Player player = event.getPlayer();
-            player.teleport(player);
+        Player p = event.getPlayer();
+        String str = p.getName();
+        if (Main.freeze.get(str)){
+            p.teleport(p);
+            System.out.println("呼ばれた");
         }
     }
 }
