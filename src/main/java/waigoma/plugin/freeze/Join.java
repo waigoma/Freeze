@@ -11,6 +11,6 @@ public class Join implements Listener {
     public void onJoin(PlayerJoinEvent event){
         Player p = event.getPlayer();
         String str = p.getName();
-        Main.freeze.put(str,false);
+        Main.freeze.put(str, false);
     }
 }
